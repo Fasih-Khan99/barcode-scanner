@@ -290,7 +290,26 @@ export class BarcodeScanComponent implements OnInit, OnDestroy {
     } catch (err) {
       console.error('Error listing video devices', err);
     }
+
+     this.startCamera();
   }
+
+
+
+  startCamera() {
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+      .then(stream => {
+        const video = this.videoElement.nativeElement;
+        video.srcObject = stream;
+        video.play();
+      })
+      .catch(error => {
+        console.error("Camera Error:", error);
+        alert("Camera access is blocked. Please allow camera permissions!");
+      });
+  }
+
+
 
   startScan() {
     if (!this.selectedDeviceId) return;
