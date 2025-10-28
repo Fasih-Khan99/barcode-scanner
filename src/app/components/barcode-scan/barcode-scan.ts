@@ -292,7 +292,7 @@ export class BarcodeScanComponent implements OnInit, OnDestroy {
     }
 
     //  this.startCamera();
-     navigator.mediaDevices.getUserMedia()
+    //  navigator.mediaDevices.getUserMedia()
   }
 
 
