@@ -29,6 +29,7 @@
     "@angular/platform-server": "^20.1.0",
     "@angular/router": "^20.1.0",
     "@angular/ssr": "^20.1.5",
+    "@netlify/angular-runtime": "^3.0.0",
     "@zxing/browser": "^0.1.5",
     "express": "^5.1.0",
     "ngx-barcode-scanner": "^14.0.1",
