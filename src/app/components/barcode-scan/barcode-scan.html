@@ -99,6 +99,8 @@
 
 <h3>Barcode Scanner</h3>
 
+    <button class="scan-btn" (click)="scanNow()">Scan now</button>
+
 <!-- <select
   [value]="selectedDeviceId"
   (change)="onDeviceChange($event.target.value)"
@@ -108,6 +110,7 @@
     {{ device.label || 'Camera ' + (devices.indexOf(device) + 1) }}
   </option>
 </select> -->
+
 <select [(ngModel)]="selectedDeviceId" (change)="onDeviceChange(selectedDeviceId)">
   <option *ngFor="let device of devices" [value]="device.deviceId">
     {{ device.label || 'Camera ' + device.deviceId }}
@@ -118,7 +121,7 @@
 <br><br>
 
 <!-- <video #videoElement autoplay></video> -->
-<video #videoElement width="320" height="240" autoplay playsinline></video>
+<video #videoElement id="video" width="320" height="240" autoplay playsinline></video>
 
 
 <h4>Scanned Codes ({{ scannedCodes.length }}):</h4>

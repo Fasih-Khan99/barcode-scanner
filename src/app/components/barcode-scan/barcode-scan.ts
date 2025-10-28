@@ -291,8 +291,15 @@ export class BarcodeScanComponent implements OnInit, OnDestroy {
       console.error('Error listing video devices', err);
     }
 
-     this.startCamera();
+    //  this.startCamera();
+     navigator.mediaDevices.getUserMedia()
   }
+
+
+  scanNow() {
+  this.startCamera();
+  this.startScan();
+}
 
 
 
