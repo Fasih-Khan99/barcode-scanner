@@ -1,55 +1,12 @@
-.scanner-container {
-  max-width: 980px;
-  margin: 12px auto;
-  font-family: Arial, sans-serif;
-}
-.controls {
-  display:flex;
-  gap:8px;
-  align-items:center;
-  margin-bottom:8px;
-}
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 640px;
-  background:#000;
-  border-radius:6px;
-  overflow:hidden;
-}
-/* video {
-  width: 100%;
-  height: auto;
-  display:block;
-  background:#000;
-} */
-.overlay {
-  position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-weight:600;
-  background: rgba(0,0,0,0.5);
-}
+
 .scanned-list {
   margin-top:12px;
 }
-.empty { color: #666 }
-table { width:100%; border-collapse:collapse }
-th, td { padding:6px 8px; border-bottom:1px solid #eee; text-align:left }
-
-
-
 
 video {
   border: 2px solid #444;
   border-radius: 8px;
 }
-
-
-
 
 .scan-btn {
     background-color: rgb(22, 224, 22);
